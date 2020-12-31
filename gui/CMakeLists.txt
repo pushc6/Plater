@@ -46,6 +46,7 @@ add_executable(plater-gui WIN32
   about.cpp
   icons.qrc
   gui.rc
+  plater-gui.manifest
 )
 
 if(MSVC)
