@@ -58,7 +58,7 @@ endif()
 target_include_directories(libplater PUBLIC .)
 target_link_libraries(libplater PRIVATE Threads::Threads)
 
-add_executable(plater "main.cpp")
+add_executable(plater main.cpp plater.manifest)
 if(MSVC)
   target_compile_options(plater PRIVATE /wd4244)
 endif()
