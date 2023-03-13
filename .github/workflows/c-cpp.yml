@@ -26,6 +26,9 @@ jobs:
     - name: makeplater
       working-directory: plater/build
       run: make
+    - name: makeguibuilddir
+      working-directory: gui
+      run: mkdir build
     - name: qmake
       working-directory: gui/build
       run: qmake ..
