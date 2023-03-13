@@ -17,6 +17,8 @@ jobs:
       run: mkdir gui/build
     - name: cdtogui
       run: cd gui/build
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v3
     - name: qmake
       run: qmake ..
     - name: make
